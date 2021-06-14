@@ -17,7 +17,7 @@ import { LoadScript, GoogleMap, Polygon } from "@react-google-maps/api";
 const map = () => {
   // Store Polygon path in state
   const [path, setPath] = useState([
-    { lat: 52.52549080781086, lng: 13.398118538856465 },
+    { lat: 55.52549080781086, lng: 13.398118538856465 },
     { lat: 52.48578559055679, lng: 13.36653284549709 },
     { lat: 52.48871246221608, lng: 13.44618372440334 }
   ]);
@@ -71,7 +71,7 @@ const map = () => {
       >
         <GoogleMap
           mapContainerClassName="App-map"
-          center={{ lat: 52.52047739093263, lng: 13.36653284549709 }}
+          center={{ lat: 40.730610, lng: -73.935242 }}
           zoom={12}
           version="weekly"
           on
