@@ -17,9 +17,9 @@ import { LoadScript, GoogleMap, Polygon } from "@react-google-maps/api";
 const map = () => {
   // Store Polygon path in state
   const [path, setPath] = useState([
-    { lat: 55.52549080781086, lng: 13.398118538856465 },
-    { lat: 52.48578559055679, lng: 13.36653284549709 },
-    { lat: 52.48871246221608, lng: 13.44618372440334 }
+    { lat: 40.631275905646774, lng: -73.9760493565738 },
+    { lat: 40.63074665412933, lng: -73.97716511994669 },
+    { lat: 40.629871496125375, lng:-73.97699848928193  }
   ]);
 
   // Define refs for Polygon instance and listeners
@@ -78,8 +78,8 @@ const map = () => {
         >
           <Polygon
             // Make the Polygon editable / draggable
-            editable
-            draggable
+            //editable
+            //draggable
             path={path}
             // Event used when manipulating and adding points
             onMouseUp={onEdit}
