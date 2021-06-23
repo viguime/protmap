@@ -2,7 +2,7 @@ import React, { useState, useRef, useCallback } from "react";
 
 import { LoadScript, GoogleMap, Polygon } from "@react-google-maps/api";
 
-import * as areasdata from "../data/NTA.geojson";
+//import * as areasdata from "../data/NTA.geojson";
 
 // This example presents a way to handle editing a Polygon
 // The objective is to get the new path on every editing event :
@@ -90,19 +90,7 @@ const map = () => {
             onLoad={onLoad}
             onUnmount={onUnmount}
           />
-
-          {areasdata.features.map((area)=>(
-            <Polygon
-              key={area.properties.BK88}
-              path={
-                { lat: areasdata.geometry.coordinates[1], lng: -73.9760493565738 },
-                { lat: 40.63074665412933, lng: -73.97716511994669 },
-                { lat: 40.629871496125375, lng:-73.97699848928193  }
-              }
-            
-            />
-
-          ))}
+          
 
         </GoogleMap>
       </LoadScript>
